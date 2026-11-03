@@ -2,33 +2,32 @@
 
 
 ## x) **Karvinen 2026: SSH public key - Login without password**
-- SSH is the leading solution for securily logging into servers.
-- SSH is being used by many in the backround (git, ansible...).
-- SSH key helps with easier log-in (not have to use password everytime) and boost security on your server.
-- SSH is easy to use. Just install like other programs in the begin.
+- SSH on johtava ratkaisu palvelimille kirjautumiseen turvallisesti.
+- SSH on monien taustalla käyttämä työkalu (git, ansible...).
+- SSH-avain helpottaa kirjautumista (salasanaa ei tarvitse syöttää joka kerta) ja parantaa palvelimen tietoturvaa.
+- SSH on helppo käyttää. Alussa se asennetaan vain kuten muutkin ohjelmat.
 
 ## **Karvinen 2026: Hello Ansible**
-- With Ansible we can manage multiple machines easily and at the same time.
-- Ansible works trought SSH. Requirements SSH daemon and Python installed.
-- Helps to configurate new machines fast.
+- Ansiblella voimme hallita useita koneita helposti ja samanaikaisesti.
+- Ansible toimii SSH:n kautta. Vaatimuksena ovat SSH-daemoni ja Python asennettuna.
+- Auttaa uusien koneiden nopeassa konfiguroinnissa.
 
 ## **a) Paikallista**
-Take a look at the h0 exercises. There you can find Debian 13 installation.
+Katso h0-tehtävät. Sieltä löydät Debian 13:n asennuksen.
 
 https://github.com/alvarmanfe/Server-management/blob/main/h0.md
 
 ##  **b) Sshecrets**
 
-Once I logged in my Virtual machine and started the terminal I first updated the system:
+Kun kirjauduin virtuaalikoneelleni ja avasin terminaalin, päivitin ensin järjestelmän ajamalla:
 ```
 sudo apt-get update
 ```
-Then I enabled the ssh key:
+Sitten otin SSH:n käyttöön:
 ```
 sudo systemctl enable
 ```
-I didn't need to install this time because I did it already in the past during the Linux course.
-Finally I tried if it works by kicking the daemon. 
+Asennusta ei tarvinnut tehdä tällä kertaa, koska tein sen jo aiemmin Linux-kurssilla. Lopuksi kokeilin, toimiiko se, potkaisemalla daemonia:
 ```
 ssh localhost
 ```
@@ -38,7 +37,7 @@ ssh localhost
 Still rocking!
 
 ## **c) Pubkey**
-I automatized the ssh login with a publickey, that I already had too. So I just run:
+Automatisoin SSH-kirjautumisen julkisella avaimella, joka minulla oli jo valmiina. Ajoin siis vain:
 
 ```
 ssh-copy-id localhost
