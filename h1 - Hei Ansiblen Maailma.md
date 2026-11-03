@@ -42,7 +42,8 @@ ssh localhost
 Still rocking!
 
 ## **c) Pubkey**
-Automatisoin SSH-kirjautumisen julkisella avaimella, joka minulla oli jo valmiina. Ajoin siis vain:
+
+Otin käyttöön avainpohjaisen SSH-kirjautumisen julkisella avaimella, joka minulla oli jo valmiina. Kopioin avaimen koneelle komennolla ssh-copy-id localhost, jolloin salasana kysyttiin vielä kerran. Sen jälkeen ssh localhost kirjasi sisään ilman salasanaa, eli avainkirjautuminen toimii.
 
 ```
 ssh-copy-id localhost
