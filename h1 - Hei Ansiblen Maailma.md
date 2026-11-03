@@ -14,9 +14,13 @@ _Päivitetty 3.11.2026_
 - Auttaa uusien koneiden nopeassa konfiguroinnissa.
 
 ## **a) Paikallista**
-Katso h0-tehtävät. Sieltä löydät Debian 13:n asennuksen.
+Katso h0-tehtävät.
 
 https://github.com/alvarmanfe/Server-management/blob/main/h0.md
+
+**TAI**... jos haluat tarkistella enemmän asennuksesta hyppää taas Linux Palvelimet kurssin h1 raporttiin, klikkamalla alla olevasta linkistä.
+
+https://github.com/alvarmanfe/Linux-servers/blob/main/h1.md
 
 ##  **b) Sshecrets**
 
@@ -94,4 +98,5 @@ Lopullinen rakenne:
 - Karvinen, T. 2026. Verkkosivu. SSH public key - Login without password. Luettavissa: https://terokarvinen.com/ssh-public-key-login-without-password/. Luettu: 02.04.2026.
 - Karvinen, T. 2026. Verkkosivu. Hello Ansible. Luettavissa: https://terokarvinen.com/hello-ansible/. Luettu 02.04.2026.
 - Karvinen, T. 2026. Verkkosivu. Palvelinten hallinta. Luettavissa: https://terokarvinen.com/palvelinten-hallinta/. Luettu: 02.04.2026.
-- Manfe, A. 2026. h0 - Oikeasti netissä. Server-management. GitHub. Luettavissa: https://github.com/alvarmanfe/Server-management/blob/main/h0.md. Luettu: 3.11.2026.
+- Manfe, A. 2026. h0 - Oikeasti netissä. Server-management. GitHub. Luettavissa: https://github.com/alvarmanfe/Server-management/blob/main/h0.md. Luettu: 30.10.2026.
+- Manfe, A. 2026b. h1 - Oma Linux. Linux-servers. GitHub. Luettavissa: https://github.com/alvarmanfe/Linux-servers/blob/main/h1.md. Luettu: 30.10.2026.
