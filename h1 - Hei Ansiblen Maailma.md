@@ -14,11 +14,11 @@ _Päivitetty 3.11.2026_
 - Auttaa uusien koneiden nopeassa konfiguroinnissa.
 
 ## **a) Paikallista**
-Katso h0-tehtävät.
+Katso h0-tehtävät:
 
 https://github.com/alvarmanfe/Server-management/blob/main/h0.md
 
-**TAI**... jos haluat tarkistella enemmän asennuksesta hyppää taas Linux Palvelimet kurssin h1 raporttiin, klikkamalla alla olevasta linkistä.
+**TAI**... jos haluat tarkistella enemmän asennuksesta hyppää taas Linux Palvelimet kurssin h1 raporttiin, klikkamalla alla olevasta linkistä:
 
 https://github.com/alvarmanfe/Linux-servers/blob/main/h1.md
 
