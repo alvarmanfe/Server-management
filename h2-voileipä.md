@@ -2,15 +2,15 @@
 
 
 ## **x)** Karvinen 2026: Sudo without password
-- Ansible needs root on the slave. One way is to allow 'sudo' without password.
-- Create a new user. Use only strong passwords.
-- Add to a new *sudoless* group and add users needing automation privileges, without using .
-- Add sudoers rule ```%sudoless ALL=(ALL) NOPASSWD: ALL.```
-- Use /etc/sudoers.d/ and visudo to avoid syntax errors.
-- New group rights update after a restart or a new login.
-- Used mainly for automation tools like Ansible.
+- Ansible tarvitsee pääkäyttäjän (root) oikeudet hallittavalla koneella. Yksi tapa mahdollistaa tämä on sallia sudo-komennon käyttö ilman salasanaa.
+- Luo uusi käyttäjä. Käytä ainoastaan vahvoja salasanoja.
+- Luo uusi sudoless-käyttäjäryhmä ja lisää siihen käyttäjät, joille halutaan antaa automaatioon tarvittavat oikeudet.
+- Lisää sudoers-sääntö: %sudoless ALL=(ALL) NOPASSWD: ALL.
+- Käytä /etc/sudoers.d/-hakemistoa ja visudo-komentoa välttääksesi määritysten syntaksivirheet.
+- Uuden käyttäjäryhmän oikeudet tulevat voimaan kirjautumalla uudelleen sisään tai käynnistämällä kone uudelleen.
+- Käytetään pääasiassa automaatiotyökalujen, kuten Ansible, kanssa.
 
-## Munroe 2006
+## Munroe 2006 : Sandwich
 <img width="457" height="381" alt="Näyttökuva 2026-11-04 170337" src="https://github.com/user-attachments/assets/728b08b8-a577-4bd1-97a6-40273273c5ab" />
 
 
@@ -18,10 +18,10 @@ Tämä hassunhauska sarjakuva kertoo ```sudo``` (_superuser do_) komennon tärke
 
 
 ## Karvinen 2026: Passwordless Sudo with Ansible
-- Ansible automation requires privilege escalation without manual passwords.
-- Passwordless sudo enables fully automated provisioning.
-- SSH + sudo configuration are core prerequisites.
-- Focus on repeatable infrastructure setup.
+- Ansible-automaatio edellyttää oikeuksien korottamista ilman manuaalista salasanan syöttämistä.
+- Salasanaton sudo mahdollistaa täysin automatisoidun palvelimien käyttöönoton ja määrityksen.
+- SSH-yhteyden ja sudo-oikeuksien määrittäminen ovat automaation keskeisiä perusedellytyksiä.
+- Tavoitteena on toistettavissa oleva ja yhdenmukainen infrastruktuurin käyttöönotto.
 
 ## **a)** Sudoless
 Tässä tehtävässä: 
