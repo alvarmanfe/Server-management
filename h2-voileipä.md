@@ -53,7 +53,7 @@ Siksi jätetään tämä ikkuna hetkeksi auki ja jatketaan työskentelyä edelli
 ## **b)** Antero
 
 
-##**LÄHTEET**
+## **LÄHTEET**
 - Karvinen, T. s.a. Sudo without password. Luettavissa: https://terokarvinen.com/passwordless-sudo/. Luettu: 4.11.2026.
 - xkcd. s.a. Sandwich. Luettavissa: https://xkcd.com/149/. Luettu: 4.11.2026.
 - Karvinen, T. s.a. Passwordless Sudo with Ansible. Luettavissa: https://terokarvinen.com/passwordless-sudo-with-ansible/. Luettu: 4.11.2026.
