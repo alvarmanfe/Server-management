@@ -10,6 +10,13 @@
 - New group rights update after a restart or a new login.
 - Used mainly for automation tools like Ansible.
 
+## Munroe 2006
+<img width="457" height="381" alt="Näyttökuva 2026-11-04 170337" src="https://github.com/user-attachments/assets/728b08b8-a577-4bd1-97a6-40273273c5ab" />
+
+
+Tämä hassunhauska sarjakuva kertoo ```sudo``` (_superuser do_) komennon tärkeydestä. Sarjakuvassa vasen ukkeli (_eli käyttäjä_) pyytää tekemään voileivän ensiksi ilman _sudo_-komentoa, jolloin toinen ukkeli (_eli kone_) ei suostu tekemään meille sämpylää. Tämän jälkeen käyttäjä pyytää suorittamaan saman _sudolla_ jolloin kone vihdoinkin suostuu. Tämä on tärkeä muistutus siitä, että ilman sudoa meillä ei ole riittäviä käyttäjäoikeuksia tiettyjen komentojen suorittamiseen. Sudon avulla tavallinen käyttäjä voi suorittaa komentoja pääkäyttäjän eli root-käyttäjän oikeuksilla.
+
+
 ## Karvinen 2026: Passwordless Sudo with Ansible
 - Ansible automation requires privilege escalation without manual passwords.
 - Passwordless sudo enables fully automated provisioning.
@@ -46,4 +53,7 @@ Siksi jätetään tämä ikkuna hetkeksi auki ja jatketaan työskentelyä edelli
 ## **b)** Antero
 
 
-
+##**LÄHTEET**
+- Karvinen, T. s.a. Sudo without password. Luettavissa: https://terokarvinen.com/passwordless-sudo/. Luettu: 4.11.2026.
+- xkcd. s.a. Sandwich. Luettavissa: https://xkcd.com/149/. Luettu: 4.11.2026.
+- Karvinen, T. s.a. Passwordless Sudo with Ansible. Luettavissa: https://terokarvinen.com/passwordless-sudo-with-ansible/. Luettu: 4.11.2026.
