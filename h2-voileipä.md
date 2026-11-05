@@ -156,5 +156,6 @@ Tässä:
 - Karvinen, T. s.a. Sudo without password. Luettavissa: https://terokarvinen.com/passwordless-sudo/. Luettu: 4.11.2026.
 - xkcd. s.a. Sandwich. Luettavissa: https://xkcd.com/149/. Luettu: 4.11.2026.
 - Karvinen, T. s.a. Passwordless Sudo with Ansible. Luettavissa: https://terokarvinen.com/passwordless-sudo-with-ansible/. Luettu: 4.11.2026.
-- Jyväskylän yliopisto. (ei pvm.). Unix – käyttöoikeudet. Luettavissa: https://appro.mit.jyu.fi/doc/tyovaline/unix/index7.html. Luettu: 4.11.2026.
 - KodeKloud. (2026). Ansible Copy Module Explained with Examples. Luettavissa: https://kodekloud.com/blog/ansible-copy/. Luettu: 4.11.2026.
+- Jyväskylän yliopisto. (ei pvm.). Unix – käyttöoikeudet. Luettavissa: https://appro.mit.jyu.fi/doc/tyovaline/unix/index7.html. Luettu: 4.11.2026.
+- McBrien, S. (2023). Linux file permissions explained. Red Hat. Luettavissa: https://www.redhat.com/en/blog/linux-file-permissions-explained. Luettu: 4.11.2026
