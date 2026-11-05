@@ -93,11 +93,11 @@ Tässä tehtävässä opettelin miten Ansiblella voidaan automatisoida ryhmä pa
 
 Asennetaan paketit htop ja tree:
 
-- Lisätään tiedostoon roles/anseba/tasks/main.yml loppuun.
+- Lisätään tiedostoon _roles/anseba/tasks/main.yml_ loppuun.
 
 <img width="443" height="153" alt="Näyttökuva 2026-11-05 171730" src="https://github.com/user-attachments/assets/67338a29-b79e-4db3-86f1-04712c3242f7" />
 
-- Sitten ajetaan ```ansible-playboook site.yml -K```
+- Sitten ajetaan idempotenssi ```ansible-playboook site.yml```
 - Testataan vaikka yhtä näistä paketeista ajamalla ```htop```
 
 <img width="1188" height="660" alt="htop" src="https://github.com/user-attachments/assets/9be27c95-6741-4af0-bff3-b4b874c1ba22" />
