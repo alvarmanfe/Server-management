@@ -50,7 +50,7 @@ Siksi jätetään tämä ikkuna hetkeksi auki ja jatketaan työskentelyä edelli
   
   ![Sieppaa2](https://github.com/user-attachments/assets/7d989ba1-0a96-4d46-a889-dad331305f95)
 
-## **b)** Antero
+## **b)** Antero (Anseba)
 
 Tarkistetaan ensiksi, miltä Ansible-hakemistoni näyttää:
 
