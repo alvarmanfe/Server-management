@@ -63,7 +63,7 @@ Tarkistetaan ensiksi, miltä Ansible-hakemistoni näyttää:
 
 
 
-- Muokkasin site.yml tiedostoa määrittelemällä ```become:true``` _hosts:in_ perään
+- Muokkasin site.yml tiedostoa määrittelemällä ```become:true``` _hosts:in_ perään ja roolin ```anseba```.
 
 <img width="390" height="129" alt="Näyttökuva 2026-11-05 154455" src="https://github.com/user-attachments/assets/10d31d0e-020d-48f0-ba50-70f6b7519544" />
 
