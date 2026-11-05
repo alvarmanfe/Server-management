@@ -36,16 +36,17 @@ Tässä tehtävässä:
 ![Sieppaa1](https://github.com/user-attachments/assets/0035c7cb-9d69-4991-bd1a-3f8e75f289f7)
 Siksi jätetään tämä ikkuna hetkeksi auki ja jatketaan työskentelyä edellisessä ikkunassa, jossa puolestaan avataan sudoers turvallisesti (tämä edellyttää aina visudo:n käyttöä).
 Lisätään rivi: ```%sudoless ALL=(ALL) NOPASSWD: ALL``` -> tallenna ja sulje.
+```
+%sudoless → koskee sudoless-ryhmään kuuluvia käyttäjiä.
 
-  %sudoless -> kokee ryhmää
-  
-  ALL       -> kaikki koneet
-  
-  (ALL)     -> voi vaihtua mihin käyttäjään tahansa
-  
-  NOPASSWD  -> ei kysy salasanaa
-  
-  ALL       -> kaikki komennot on sallittu
+ALL → koskee kaikkia palvelimia.
+
+(ALL) → käyttäjä voi suorittaa komentoja minkä tahansa käyttäjän oikeuksilla.
+
+NOPASSWD → salasanaa ei tarvitse syöttää.
+
+ALL → kaikki komennot ovat sallittuja.
+```
 
   Nyt sudon pitäisi olla salasanaton.
 
