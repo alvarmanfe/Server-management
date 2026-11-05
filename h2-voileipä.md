@@ -75,7 +75,7 @@ Tarkistetaan ensiksi, miltä Ansible-hakemistoni näyttää:
 
 <img width="390" height="129" alt="Näyttökuva 2026-11-05 154455" src="https://github.com/user-attachments/assets/10d31d0e-020d-48f0-ba50-70f6b7519544" />
 
-- Ajoin ```ansible-playbook site.yml```. Nyt valittaa, että sudo tarvitsee salasanaa. Näin käy koska koska käyttäjä _alvar_ ei ole vielä sudoless ryhmässä.
+- Ajoin ```ansible-playbook site.yml```. Nyt valittaa, että sudo tarvitsee salasanaa. Näin käy koska koska käyttäjäni ei ole vielä sudoless ryhmässä.
 
 - Näin ollen suoritetaan ```ansible-playbook site.yml -K``` (```-K``` on sama kuin ```--ask-become-password```), eli kysyy käyttäjäni _sudo_-salasanan. Näin voidaan suorittaa tämän ajo heti.
 
