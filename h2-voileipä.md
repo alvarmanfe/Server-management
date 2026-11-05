@@ -126,9 +126,9 @@ Toimii!
 
 Tässä tehtävässä harjoittelin miten Ansiblella voidaan automatisoida tiedostojen luomista ja käyttöoikeuksien hallintaa ilman, että samoja toimenpiteitä tarvitsee tehdä käsin jokaisella palvelimella.
 
-- Tein tehtävän olemassa olevaan anseba rooliin tiedostossa roles/anseba/tasks/main.yml jonka avasin microlla
+- Tein tehtävän olemassa olevaan anseba rooliin tiedostossa _roles/anseba/tasks/main.yml_ jonka avasin microlla
 - Lisäsin sinne copy-tehtävän, jolla loin orjapalvelimelle tekstitiedoston nimeltä _tervehdys.txt_
-- Määrittelin omistajaksi ja omistavaksi ryhmäksi _anseba_.
+- Määrittelin omistajaksi ja omistavaksi ryhmäksi _anseba_
 - Käytin oktaalilukua "0640"
 
 <img width="452" height="212" alt="Näyttökuva 2026-11-06 005243" src="https://github.com/user-attachments/assets/b67a3007-5df1-4f3b-9916-06207e5cdf37" />
