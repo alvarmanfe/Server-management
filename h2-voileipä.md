@@ -5,7 +5,7 @@
 - Ansible tarvitsee pääkäyttäjän (root) oikeudet hallittavalla koneella. Yksi tapa mahdollistaa tämä on sallia sudo-komennon käyttö ilman salasanaa.
 - Luo uusi käyttäjä. Käytä ainoastaan vahvoja salasanoja.
 - Luo uusi sudoless-käyttäjäryhmä ja lisää siihen käyttäjät, joille halutaan antaa automaatioon tarvittavat oikeudet.
-- Lisää sudoers-sääntö: %sudoless ALL=(ALL) NOPASSWD: ALL.
+- Lisää sudoers-sääntö: ```%sudoless ALL=(ALL) NOPASSWD: ALL```.
 - Käytä ```/etc/sudoers.d/```hakemistoa ja ```visudo``` komentoa välttääksesi määritysten syntaksivirheet.
 - Uuden käyttäjäryhmän oikeudet tulevat voimaan kirjautumalla uudelleen sisään tai käynnistämällä kone uudelleen.
 - Käytetään pääasiassa automaatiotyökalujen, kuten Ansiblen, kanssa.
