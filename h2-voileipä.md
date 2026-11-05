@@ -57,13 +57,13 @@ Tarkistetaan ensiksi, miltä Ansible-hakemistoni näyttää:
 <img width="623" height="227" alt="Näyttökuva 2026-11-05 154101" src="https://github.com/user-attachments/assets/c300d8c2-3230-412b-9ee6-3e5205b937a3" />
 
 - Tarkistetaan oma ssh ```ls ~/.ssh/``` ja kopioidaan se.
-- Määritin roolit anseballe (oma versio anterosta) muokkaamalla ```micro roles/anseba/tasks/main.yml``` anseba roolitiedostoa Teron sivulla olevilla ohjeilla ja liitin oikeaan kenttäkohtaan oman ssh-avaimeni.
+- Loin polun _/roles/anseba/tasks_ ja lisäsin sinne tiedoston _main.yml_, jota muokkasin mikrolla (```micro roles/anseba/tasks/main.yml```) Teron sivulla olevilla ohjeilla ja liitin oikeaan kenttäkohtaan oman ssh-avaimeni.
 
 <img width="1190" height="385" alt="Näyttökuva 2026-11-05 153925" src="https://github.com/user-attachments/assets/a504781b-831c-4206-b355-5bfd021a33d1" />
 
 
 
-- Muokkasin site.yml tiedostoa määrittelemällä ```become:true``` _hosts:in_ perään ja roolin ```anseba```.
+- Muokkasin site.yml tiedostoa määrittelemällä ```become:true``` _hosts:in_ perään ja lisäsin roolin ```anseba```.
 
 <img width="390" height="129" alt="Näyttökuva 2026-11-05 154455" src="https://github.com/user-attachments/assets/10d31d0e-020d-48f0-ba50-70f6b7519544" />
 
