@@ -73,16 +73,17 @@ Tarkistetaan ensiksi, miltä Ansible-hakemistoni näyttää:
 
 <img width="390" height="129" alt="Näyttökuva 2026-11-05 154455" src="https://github.com/user-attachments/assets/10d31d0e-020d-48f0-ba50-70f6b7519544" />
 
-- Ajoin ```ansible-playbook site.yml```. Nyt valittaa, että sudo tarvitsee salasanaa.
-- Sitten ```ansible-playbook site.yml -K``` -K on sama kuin ```--ask-become-password```, eli kysyy käyttäjäni sudo-salasanan.
+- Ajoin ```ansible-playbook site.yml```. Nyt valittaa, että sudo tarvitsee salasanaa. Näin käy koska koska käyttäjä _alvar_ ei ole vielä sudoless ryhmässä.
+
+- Näin ollen suoritetaan ```ansible-playbook site.yml -K``` (-K on sama kuin ```--ask-become-password```), eli kysyy käyttäjäni _sudo_-salasanan. Näin voidaan suorittaa tämän ajo heti.
 
 <img width="1190" height="657" alt="Näyttökuva 2026-11-05 160128" src="https://github.com/user-attachments/assets/9b0cbab1-f303-4578-8dde-94d8476c06d5" />
 
-- Avasin ```ansible.cgf``` tiedoston ja lisäsin sinne asetuksen ```remote_user = anseba```.
+- Sen jälkeen avasin ```ansible.cgf``` tiedoston ja lisäsin sinne asetuksen ```remote_user = anseba```.
 
 <img width="385" height="117" alt="Näyttökuva 2026-11-05 183309" src="https://github.com/user-attachments/assets/f46a7083-b746-4824-a0b5-1349b824b8aa" />
 
-Nyt voidaan kirjautua koneelle Ansiblen ansiosta anseba käyttäjänä, vaikka ajettaisi komento omalla käyttäjällä. Myöskään ssh-kirjautumiseen ei tarvita enää salasanaa, koska julkinen avaimeni on lisätty anseba käyttäjälle. _Sudoless_ toimii, eikä vaadi salasanaa. Tämä onnistuu siksi, että anseba kuuluu ryhmään _sudoless_.
+Tämän ansiosta voidaan kirjautua koneelle anseba käyttäjänä, vaikka ajettaisi komento omalla käyttäjällä. Myöskään ssh-kirjautumiseen ei tarvita enää salasanaa, koska julkinen avaimeni on lisätty anseba käyttäjälle. _Sudoless_ toimii, eikä vaadi salasanaa. Tämä onnistuu siksi, että anseba kuuluu ryhmään _sudoless_.
 Koitetaan nyt ajaa pelkkä komento ```ansible-playbook site.yml``` , joka ei puolestaan vaadi enää salasanaa.
 
 <img width="1096" height="486" alt="Näyttökuva 2026-11-05 184156" src="https://github.com/user-attachments/assets/13b18f0d-3cd8-4dd1-882d-79e6161c31d3" />
