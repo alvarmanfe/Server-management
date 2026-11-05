@@ -113,7 +113,7 @@ _Htop_ taas on Debianissa kätevä järjestelmänvalvontatyökalu, jolla voi seu
 
 <img width="443" height="153" alt="Näyttökuva 2026-11-05 171730" src="https://github.com/user-attachments/assets/67338a29-b79e-4db3-86f1-04712c3242f7" />
 
-- Sitten ajetaan idempotenssi ```ansible-playboook site.yml```
+- Sitten ajetaan idempotenssi ```ansible-playboook site.yml``` (ajettu myöhemmin uudestaan, siksi ei ole muutoksia ja kaikki hyväksytty)
 
 <img width="1096" height="486" alt="Näyttökuva 2026-11-05 184156" src="https://github.com/user-attachments/assets/13b18f0d-3cd8-4dd1-882d-79e6161c31d3" />
 
