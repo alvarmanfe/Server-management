@@ -72,10 +72,20 @@ Tarkistetaan ensiksi, miltä Ansible-hakemistoni näyttää:
 
 <img width="1190" height="657" alt="Näyttökuva 2026-11-05 160128" src="https://github.com/user-attachments/assets/9b0cbab1-f303-4578-8dde-94d8476c06d5" />
 
+- Avasin ```ansible.cgf``` tiedoston ja lisäsin sinne asetuksen ```remote_user = anseba```.
+
+<img width="385" height="117" alt="Näyttökuva 2026-11-05 183309" src="https://github.com/user-attachments/assets/f46a7083-b746-4824-a0b5-1349b824b8aa" />
+
+Nyt voidaan kirjautua koneelle Ansiblen ansiosta anseba käyttäjänä, vaikka ajettaisi komento omalla käyttäjällä. Myöskään ssh-kirjautumiseen ei tarvita enää salasanaa, koska julkinen avaimeni on lisätty anseba käyttäjälle. _Sudoless_ toimii, eikä vaadi salasanaa. Tämä onnistuu siksi, että anseba kuuluu ryhmään _sudoless_.
+Koitetaan nyt ajaa myös pelkkä komento ```ansible-playbook site.yml``` , joka ei puolestaan vaadi enää salasanaa.
+
+<img width="1096" height="486" alt="Näyttökuva 2026-11-05 184156" src="https://github.com/user-attachments/assets/13b18f0d-3cd8-4dd1-882d-79e6161c31d3" />
+
 - Kokeillaan kirjautumista ilman salasanaa:
+
 <img width="1049" height="169" alt="Näyttökuva 2026-11-05 170112" src="https://github.com/user-attachments/assets/0d644ac4-1f98-452b-a8b5-6a436d52d113" />
 
-Kirjautuminen onnistuu ssh ilman salasanaa ansiblella käyttäjällä anseba.
+Kirjautuminen onnistuu ssh:lla ilman salasanaa ansiblella käyttäjällä anseba.
 
 Tässä tehtävässä opettelin miten Ansiblella voidaan automatisoida ryhmä palvelimelle kirjautumista ilman käyttäjän salasanan syöttämistä ja pääkäyttäjän oikeuksia vaativien komentojen suorittamisen ilman sudoa.
 
@@ -84,12 +94,13 @@ Tässä tehtävässä opettelin miten Ansiblella voidaan automatisoida ryhmä pa
 Asennetaan paketit htop ja tree:
 
 - Lisätään tiedostoon roles/anseba/tasks/main.yml loppuun.
-<img width="443" height="153" alt="Näyttökuva 2026-11-05 171730" src="https://github.com/user-attachments/assets/67338a29-b79e-4db3-86f1-04712c3242f7" />
+  <img width="443" height="153" alt="Näyttökuva 2026-11-05 171730" src="https://github.com/user-attachments/assets/67338a29-b79e-4db3-86f1-04712c3242f7" />
 
 - Sitten ajetaan ````ansible-playboook site.yml -K```
 - Testataan vaikka yhtä näistä paketeista ajamalla ```htop```
 
-<img width="1188" height="660" alt="htop" src="https://github.com/user-attachments/assets/9be27c95-6741-4af0-bff3-b4b874c1ba22" />
+  <img width="1188" height="660" alt="htop" src="https://github.com/user-attachments/assets/9be27c95-6741-4af0-bff3-b4b874c1ba22" />
+
 Toimii!
 
 ## **d)**
