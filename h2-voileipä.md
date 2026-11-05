@@ -77,11 +77,11 @@ Tarkistetaan ensiksi, miltä Ansible-hakemistoni näyttää:
 <img width="385" height="117" alt="Näyttökuva 2026-11-05 183309" src="https://github.com/user-attachments/assets/f46a7083-b746-4824-a0b5-1349b824b8aa" />
 
 Nyt voidaan kirjautua koneelle Ansiblen ansiosta anseba käyttäjänä, vaikka ajettaisi komento omalla käyttäjällä. Myöskään ssh-kirjautumiseen ei tarvita enää salasanaa, koska julkinen avaimeni on lisätty anseba käyttäjälle. _Sudoless_ toimii, eikä vaadi salasanaa. Tämä onnistuu siksi, että anseba kuuluu ryhmään _sudoless_.
-Koitetaan nyt ajaa myös pelkkä komento ```ansible-playbook site.yml``` , joka ei puolestaan vaadi enää salasanaa.
+Koitetaan nyt ajaa pelkkä komento ```ansible-playbook site.yml``` , joka ei puolestaan vaadi enää salasanaa.
 
 <img width="1096" height="486" alt="Näyttökuva 2026-11-05 184156" src="https://github.com/user-attachments/assets/13b18f0d-3cd8-4dd1-882d-79e6161c31d3" />
 
-- Kokeillaan kirjautumista ilman salasanaa:
+- Kokeillaan myös kirjautumista ilman salasanaa:
 
 <img width="1049" height="169" alt="Näyttökuva 2026-11-05 170112" src="https://github.com/user-attachments/assets/0d644ac4-1f98-452b-a8b5-6a436d52d113" />
 
