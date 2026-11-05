@@ -88,7 +88,7 @@ Kirjautuminen onnistuu ssh:lla ilman salasanaa ansiblella käyttäjällä anseba
 
 Tässä tehtävässä opettelin miten Ansiblella voidaan automatisoida ryhmä palvelimelle kirjautumista ilman käyttäjän salasanan syöttämistä ja pääkäyttäjän oikeuksia vaativien komentojen suorittamisen ilman sudoa.
 
-## **c)**
+## **c)** Package
 
 Asennetaan paketit ```tree``` ja ```htop```. 
 Tree on komentorivityökalu, joka näyttää hakemistot ja tiedostot puumaisessa rakenteessa.
@@ -105,7 +105,7 @@ Htop taas on Debianissa kätevä järjestelmänvalvontatyökalu, jolla voi seura
 
 Toimii!
 
-## **d)**
+## **d)** File
 
 
 ## **LÄHTEET**
