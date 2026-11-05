@@ -92,7 +92,8 @@ Myös salasanaton sudo toimii, sillä anseba kuuluu _sudo_-ryhmään ja sille on
 
 Kokeillaan nyt suorittaa pelkkä komento ```ansible-playbook site.yml```. Tämän pitäisi nyt onnistua ilman salasanojen syöttämistä.
 
-<img width="1096" height="486" alt="Näyttökuva 2026-11-05 184156" src="https://github.com/user-attachments/assets/13b18f0d-3cd8-4dd1-882d-79e6161c31d3" />
+<img width="848" height="193" alt="Näyttökuva 2026-11-05 235337" src="https://github.com/user-attachments/assets/a1b75f8d-3307-43a0-b2e3-da30be779ac8" />
+
 
 - Kokeillaan myös kirjautumista ilman salasanaa:
 
@@ -113,6 +114,9 @@ _Htop_ taas on Debianissa kätevä järjestelmänvalvontatyökalu, jolla voi seu
 <img width="443" height="153" alt="Näyttökuva 2026-11-05 171730" src="https://github.com/user-attachments/assets/67338a29-b79e-4db3-86f1-04712c3242f7" />
 
 - Sitten ajetaan idempotenssi ```ansible-playboook site.yml```
+
+<img width="1096" height="486" alt="Näyttökuva 2026-11-05 184156" src="https://github.com/user-attachments/assets/13b18f0d-3cd8-4dd1-882d-79e6161c31d3" />
+
 - Testataan vaikka yhtä näistä asennetuista paketeista ajamalla ```htop``` 
 <img width="1188" height="660" alt="htop" src="https://github.com/user-attachments/assets/9be27c95-6741-4af0-bff3-b4b874c1ba22" />
 
