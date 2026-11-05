@@ -6,9 +6,9 @@
 - Luo uusi käyttäjä. Käytä ainoastaan vahvoja salasanoja.
 - Luo uusi sudoless-käyttäjäryhmä ja lisää siihen käyttäjät, joille halutaan antaa automaatioon tarvittavat oikeudet.
 - Lisää sudoers-sääntö: %sudoless ALL=(ALL) NOPASSWD: ALL.
-- Käytä /etc/sudoers.d/-hakemistoa ja visudo-komentoa välttääksesi määritysten syntaksivirheet.
+- Käytä ```/etc/sudoers.d/```hakemistoa ja ```visudo``` komentoa välttääksesi määritysten syntaksivirheet.
 - Uuden käyttäjäryhmän oikeudet tulevat voimaan kirjautumalla uudelleen sisään tai käynnistämällä kone uudelleen.
-- Käytetään pääasiassa automaatiotyökalujen, kuten Ansible, kanssa.
+- Käytetään pääasiassa automaatiotyökalujen, kuten Ansiblen, kanssa.
 
 ## Munroe 2006 : Sandwich
 <img width="457" height="381" alt="Näyttökuva 2026-11-04 170337" src="https://github.com/user-attachments/assets/728b08b8-a577-4bd1-97a6-40273273c5ab" />
