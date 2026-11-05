@@ -57,6 +57,8 @@ Lisätään rivi: ```%sudoless ALL=(ALL) NOPASSWD: ALL``` -> tallenna ja sulje.
 
 ## **b)** Antero (Anseba)
 
+Tässä tehtävässä opettelin, miten Ansiblella voidaan automatisoida useille palvelimille kirjautuminen ilman salasanan syöttämistä sekä suorittaa pääkäyttäjän oikeuksia vaativia komentoja ilman sudo-salasanan kysymistä.
+
 Minulla taisi olla tässä kohtaa jo osa asetuksista tehtynä.
 Tarkistetaan ensiksi, miltä Ansible-hakemistoni näyttää:
 
@@ -97,7 +99,6 @@ Kokeillaan nyt suorittaa pelkkä komento ```ansible-playbook site.yml```. Tämä
 
 Kirjautuminen onnistuu ssh:lla ilman salasanaa ansiblella käyttäjällä anseba.
 
-Tässä tehtävässä opettelin miten Ansiblella voidaan automatisoida ryhmä palvelimelle kirjautumista ilman käyttäjän salasanan syöttämistä ja pääkäyttäjän oikeuksia vaativien komentojen suorittamisen ilman sudoa.
 
 ## **c)** Package
 
