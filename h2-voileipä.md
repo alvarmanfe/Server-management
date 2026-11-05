@@ -87,7 +87,7 @@ Tämän asetuksen ansiosta Ansible kirjautuu hallittavalle koneelle käyttäjän
 
 Myös salasanaton sudo toimii, sillä anseba kuuluu _sudo_-ryhmään ja sille on määritetty oikeus käyttää _sudo_-komentoja ilman salasanan kysymistä.
 
-Kokeillaan nyt suorittaa pelkkä komento ```ansible-playbook site.yml```. Tämän pitäisi onnistua ilman salasanojen syöttämistä.
+Kokeillaan nyt suorittaa pelkkä komento ```ansible-playbook site.yml```. Tämän pitäisi nyt onnistua ilman salasanojen syöttämistä.
 
 <img width="1096" height="486" alt="Näyttökuva 2026-11-05 184156" src="https://github.com/user-attachments/assets/13b18f0d-3cd8-4dd1-882d-79e6161c31d3" />
 
