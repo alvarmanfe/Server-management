@@ -146,7 +146,7 @@ Tässä:
 - Toisena oleva _anseba_ osoittaa omistavaa ryhmää.
 - Ensimmäinen _-_ merkki kertoo, että kyseessä on tavallinen tiedosto.
 - Oikeudet on jaettu kolmeen lohkoon: omistaja (_rw-_), ryhmä (_r--_) ja muut käyttäjät (_---_).
-- Omistajalla on read (_r_) ja write (_w_) -oikeudet, omistavalla ryhmällä pelkät read -oikeudet ja muilla käyttäjillä ei ole käyttöoikeuksia.
+- Omistajalla on _read_ (_r_) ja _write_ (_w_) -oikeudet, omistavalla ryhmällä pelkät _read_ -oikeudet ja muilla käyttäjillä ei ole käyttöoikeuksia.
 - Käyttöoikeuksien oktaalimuoto on 0640, jossa 6 tarkoittaa luku- ja kirjoitusoikeuksia, 4 pelkkiä lukuoikeuksia ja 0 ei oikeuksia.
   
 
