@@ -66,7 +66,7 @@ Tarkistetaan ensiksi, miltä Ansible-hakemistoni näyttää:
 <img width="623" height="227" alt="Näyttökuva 2026-11-05 154101" src="https://github.com/user-attachments/assets/c300d8c2-3230-412b-9ee6-3e5205b937a3" />
 
 - Tarkistetaan oma ssh ```ls ~/.ssh/``` ja kopioidaan se.
-- Muokkasin polussa _/roles/anseba/tasks_ tiedostoa _main.yml_ mikrolla (```micro roles/anseba/tasks/main.yml```) Teron sivulla olevilla ohjeilla ja liitin oikeaan kenttäkohtaan oman ssh-avaimeni.
+- Muokkasin polussa _/roles/anseba/tasks_ tiedostoa _main.yml_ mikrolla (```micro roles/anseba/tasks/main.yml```) Teron sivulla [Lähde: Tero Karvinen – Passwordless Sudo with Ansible](https://terokarvinen.com/passwordless-sudo-with-ansible/) olevilla ohjeilla ja liitin oikeaan kenttäkohtaan oman ssh-avaimeni.
 
 <img width="1190" height="385" alt="Näyttökuva 2026-11-05 153925" src="https://github.com/user-attachments/assets/a504781b-831c-4206-b355-5bfd021a33d1" />
 
