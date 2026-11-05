@@ -98,7 +98,7 @@ Kokeillaan nyt suorittaa pelkkä komento ```ansible-playbook site.yml```. Tämä
 
 <img width="1049" height="169" alt="Näyttökuva 2026-11-05 170112" src="https://github.com/user-attachments/assets/0d644ac4-1f98-452b-a8b5-6a436d52d113" />
 
-Kirjautuminen onnistuu ssh:lla ilman salasanaa ansiblella käyttäjällä anseba.
+SSH-kirjautuminen Ansiblella käyttäjänä anseba onnistuu nyt ilman salasanan syöttämistä.
 
 
 ## **c)** Package
