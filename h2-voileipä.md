@@ -34,11 +34,17 @@ Tässä tehtävässä:
   
 - Avattiin uusi terminaali johon kirjauduttiin omalla sudo käyttäjällä ja ajettiin komento ```sudo -i```. Tämä toimii pelasturenkaana siltä varalta, että jos sudo menee rikki voidaan korjata se rootin avulla.
 ![Sieppaa1](https://github.com/user-attachments/assets/0035c7cb-9d69-4991-bd1a-3f8e75f289f7)
-Siksi jätetään tämä ikkuna hetkeksi auki ja jatketaan työskentelyä edellisessä ikkunassa, jossa puolestaan avataan sudoers turvallisesti (tämä edellyttää aina visudo:n käyttöä). Lisätään rivi: ```%sudoless ALL=(ALL) NOPASSWD: ALL``` -> tallenna ja sulje.
+Siksi jätetään tämä ikkuna hetkeksi auki ja jatketaan työskentelyä edellisessä ikkunassa, jossa puolestaan avataan sudoers turvallisesti (tämä edellyttää aina visudo:n käyttöä).
+Lisätään rivi: ```%sudoless ALL=(ALL) NOPASSWD: ALL``` -> tallenna ja sulje.
+
   %sudoless -> kokee ryhmää
+  
   ALL       -> kaikki koneet
+  
   (ALL)     -> voi vaihtua mihin käyttäjään tahansa
+  
   NOPASSWD  -> ei kysy salasanaa
+  
   ALL       -> kaikki komennot on sallittu
 
   Nyt sudon pitäisi olla salasanaton.
