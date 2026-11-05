@@ -104,8 +104,8 @@ SSH-kirjautuminen Ansiblella käyttäjänä _anseba_ onnistuu nyt ilman salasana
 ## **c)** Package
 
 Asennetaan paketit ```tree``` ja ```htop```. 
-Tree on komentorivityökalu, joka näyttää hakemistot ja tiedostot puumaisessa rakenteessa.
-Htop taas on Debianissa kätevä järjestelmänvalvontatyökalu, jolla voi seurata tietokoneen ja palvelimen toimintaa reaaliajassa. Se sisältää samoja toimintoja kun _tehtävienhallinta_ Windowsissa.
+_Tree_ on komentorivityökalu, joka näyttää hakemistot ja tiedostot puumaisessa rakenteessa.
+_Htop_ taas on Debianissa kätevä järjestelmänvalvontatyökalu, jolla voi seurata tietokoneen ja palvelimen toimintaa reaaliajassa. Se sisältää samoja toimintoja kun _tehtävienhallinta_ Windowsissa.
 
 
 - Lisätään tiedostoon _roles/anseba/tasks/main.yml_ loppuun.
