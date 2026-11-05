@@ -124,6 +124,33 @@ Toimii!
 
 ## **d)** File
 
+Tässä tehtävässä harjoittelin miten Ansiblella voidaan automatisoida tiedostojen luomista ja käyttöoikeuksien hallintaa ilman, että samoja toimenpiteitä tarvitsee tehdä käsin jokaisella palvelimella.
+
+- Tein tehtävän olemassa olevaan anseba rooliin tiedostossa roles/anseba/tasks/main.yml jonka avasin microlla
+- Lisäsin sinne copy-tehtävän, jolla loin orjapalvelimelle tekstitiedoston nimeltä _tervehdys.txt_
+- Määrittelin omistajaksi ja omistavaksi ryhmäksi _anseba_.
+- Käytin oktaalilukua "0640"
+
+<img width="452" height="212" alt="Näyttökuva 2026-11-06 005243" src="https://github.com/user-attachments/assets/b67a3007-5df1-4f3b-9916-06207e5cdf37" />
+
+- Suoritin idempotenssin ```ansible-playbook site.yml```
+
+<img width="1188" height="524" alt="Näyttökuva 2026-11-06 005615" src="https://github.com/user-attachments/assets/cf42ce36-b9ed-48fc-b425-403fbe0562a5" />
+
+- Lopuksi kirjauduin omalle orjapalvelimelle ssh-yhteydellä ja tarkistin ```ls -l``` komennolla luodun tiedoston käyttöoikeudet.
+
+<img width="1007" height="234" alt="Näyttökuva 2026-11-06 005744" src="https://github.com/user-attachments/assets/e1de160e-1e3d-4d24-b18d-5fc240825222" />
+
+Tässä:
+- Ensimmäinen _anseba_ osoittaa tiedoston omistavaa käyttäjää.
+- Toisena oleva _anseba_ osoittaa omistavaa ryhmää.
+- Ensimmäinen _-_ merkki kertoo, että kyseessä on tavallinen tiedosto.
+- Oikeudet on jaettu kolmeen lohkoon: omistaja (_rw-_), ryhmä (_r--_) ja muut käyttäjät (_---_).
+- Omistajalla on read (_r_) ja write (_w_) -oikeudet, omistavalla ryhmällä pelkät read -oikeudet ja muilla käyttäjillä ei ole käyttöoikeuksia.
+- Käyttöoikeuksien oktaalimuoto on 0640, jossa 6 tarkoittaa luku- ja kirjoitusoikeuksia, 4 pelkkiä lukuoikeuksia ja 0 ei oikeuksia.
+  
+
+
 
 ## **LÄHTEET**
 - Karvinen, T. s.a. Sudo without password. Luettavissa: https://terokarvinen.com/passwordless-sudo/. Luettu: 4.11.2026.
