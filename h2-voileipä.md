@@ -52,6 +52,48 @@ Siksi jätetään tämä ikkuna hetkeksi auki ja jatketaan työskentelyä edelli
 
 ## **b)** Antero
 
+Tarkistetaan ensiksi, miltä Ansible-hakemistoni näyttää:
+
+<img width="623" height="227" alt="Näyttökuva 2026-11-05 154101" src="https://github.com/user-attachments/assets/c300d8c2-3230-412b-9ee6-3e5205b937a3" />
+
+- Tarkistetaan oma ssh ```ls ~/.ssh/``` ja kopioidaan se.
+- Määritin roolit anseballe (oma versio anterosta) muokkaamalla ```micro roles/anseba/tasks/main.yml``` anseba roolitiedostoa Teron sivulla olevilla ohjeilla ja liitin oikeaan kenttäkohtaan oman ssh-avaimeni.
+
+<img width="1190" height="385" alt="Näyttökuva 2026-11-05 153925" src="https://github.com/user-attachments/assets/a504781b-831c-4206-b355-5bfd021a33d1" />
+
+
+
+- Muokkasin site.yml tiedostoa määrittelemällä ```become:true``` _hosts:in_ perään
+
+<img width="390" height="129" alt="Näyttökuva 2026-11-05 154455" src="https://github.com/user-attachments/assets/10d31d0e-020d-48f0-ba50-70f6b7519544" />
+
+- Ajoin ```ansible-playbook site.yml```. Nyt valittaa, että sudo tarvitsee salasanaa.
+- Sitten ```ansible-playbook site.yml -K``` -K on sama kuin ```--ask-become-password```, eli kysyy käyttäjäni sudo-salasanan.
+
+<img width="1190" height="657" alt="Näyttökuva 2026-11-05 160128" src="https://github.com/user-attachments/assets/9b0cbab1-f303-4578-8dde-94d8476c06d5" />
+
+- Kokeillaan kirjautumista ilman salasanaa:
+<img width="1049" height="169" alt="Näyttökuva 2026-11-05 170112" src="https://github.com/user-attachments/assets/0d644ac4-1f98-452b-a8b5-6a436d52d113" />
+
+Kirjautuminen onnistuu ssh ilman salasanaa ansiblella käyttäjällä anseba.
+
+Tässä tehtävässä opettelin miten Ansiblella voidaan automatisoida ryhmä palvelimelle kirjautumista ilman käyttäjän salasanan syöttämistä ja pääkäyttäjän oikeuksia vaativien komentojen suorittamisen ilman sudoa.
+
+## **c)**
+
+Asennetaan paketit htop ja tree:
+
+- Lisätään tiedostoon roles/anseba/tasks/main.yml loppuun.
+<img width="443" height="153" alt="Näyttökuva 2026-11-05 171730" src="https://github.com/user-attachments/assets/67338a29-b79e-4db3-86f1-04712c3242f7" />
+
+- Sitten ajetaan ````ansible-playboook site.yml -K```
+- Testataan vaikka yhtä näistä paketeista ajamalla ```htop```
+
+<img width="1188" height="660" alt="htop" src="https://github.com/user-attachments/assets/9be27c95-6741-4af0-bff3-b4b874c1ba22" />
+Toimii!
+
+## **d)**
+
 
 ## **LÄHTEET**
 - Karvinen, T. s.a. Sudo without password. Luettavissa: https://terokarvinen.com/passwordless-sudo/. Luettu: 4.11.2026.
