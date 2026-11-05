@@ -44,8 +44,7 @@ Siksi jätetään tämä ikkuna hetkeksi auki ja jatketaan työskentelyä edelli
   Nyt sudon pitäisi olla salasanaton.
 
   Tarkistetaan vielä kirjautumalla uudestaan uudelle käyttäjälle ```anseba@localhost```.
-  Tyhjennetään sudon muistama aiempi kirjautuminen komennolla ```sudo -k``` jotta voidaan     
-  testata onko käyttäjä nyt oikeasti salasanaton.
+  Tyhjennetään sudon muistama aiempi kirjautuminen komennolla ```sudo -k``` jotta voidaan testata onko käyttäjä nyt oikeasti salasanaton.
   Ajetaan testi ansebana: ```sudo echo "See you at TeroKarvinen.com"``` ja tuloksena saadaan *See you at TeroKarvinen.com*. Harjoitus onnistui sillä salasanaa ei kysytty.
   
   ![Sieppaa2](https://github.com/user-attachments/assets/7d989ba1-0a96-4d46-a889-dad331305f95)
