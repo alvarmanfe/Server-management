@@ -35,7 +35,7 @@
 
   <img width="606" height="232" alt="Näyttökuva 2026-11-12 065406" src="https://github.com/user-attachments/assets/a9c2bf62-b7f2-4d4c-a952-7edcc2651447" />
 
-- Lopuksi otan käyttöön asetustiedoston ja pyydän apaachea lataamaan asetukset uudelleen ```sudo systemctl reload apache2```
+- Lopuksi otan käyttöön asetustiedoston ja pyydän Apachea lataamaan asetukset uudelleen ```sudo systemctl reload apache2```
 
   <img width="805" height="79" alt="Näyttökuva 2026-11-12 070116" src="https://github.com/user-attachments/assets/70bfdab0-461c-4b3d-ac44-086500d17f15" />
 
