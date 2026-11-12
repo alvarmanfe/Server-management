@@ -31,7 +31,7 @@ Asennetaan aluksi Apache käsin.
   <img width="797" height="271" alt="Näyttökuva 2026-11-11 181840" src="https://github.com/user-attachments/assets/6f284efc-136a-4893-a3d1-e228489d675a" />
 
 - Avaan Apachen asetustiedostot komennolla:
-```sudoedit /etc/apache2/sites-available/sona2k.example.com.conf```
+```sudoedit /etc/apache2/sites-available/alvarmanfe.com.conf```
 
 - Lisään tarvittavat muutokset jotka osoittaavat _public_ kansioon jossa index.html sivuni löytyy
 
@@ -71,7 +71,7 @@ ja vaihdetaan asetuksia samalla tavalla kuin Apachessakin, mutta omalla syntaksi
 
   <img width="552" height="128" alt="Näyttökuva 2026-11-12 075109" src="https://github.com/user-attachments/assets/03bf0d42-3ffe-43e8-8f44-4b39b84a0834" />
 
-- 
+- Toisin kun Apachessa jossa käytettiin sitesenable
 
 
 
