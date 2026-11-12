@@ -98,6 +98,8 @@ Nämä kaksi tehtävää muistuttivat minulle ```sites-available``` ja ```sites-
 
 - Nginx. Beginner’s Guide. Luettavissa: https://nginx.org/en/docs/beginners_guide.html. Luettu: 11.11.2026.
 
+- Stack Overflow. 2014. What is the difference between the 'sites-enabled' and 'sites-available' directory? Luettavissa: https://stackoverflow.com/questions/21812360/what-is-the-difference-between-the-sites-enabled-and-sites-available-directo. Luettu: 11.11.2026.
+
 
 
 
