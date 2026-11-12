@@ -91,7 +91,7 @@ Tässä tehtävässä asennettiin Nginx Ansiblella.
 
 - Tein sinne ```main.yml``` tiedoston, jota muokkasin microlla seuraavasti:
 
-  <img width="419" height="187" alt="Näyttökuva 2026-11-12 130617" src="https://github.com/user-attachments/assets/31642c72-2c48-4876-aa13-5af71bbd9458" />
+  <img width="419" height="187" alt="Näyttökuva 2026-11-12 130617" src="https://github.com/user-attachments/assets/31642c72-2c48-4876-aa13-5af71bbd9458" /> (Tässä virhe, jonka korjaan myöhemmin)
 
 - Käyn muokkaamassa ```site.yml``` tiedostoa lisäten sinne **_nginx_** roolin.
 
@@ -101,12 +101,8 @@ Tässä tehtävässä asennettiin Nginx Ansiblella.
 
   <img width="1182" height="635" alt="Näyttökuva 2026-11-12 133325" src="https://github.com/user-attachments/assets/e83d4009-3133-4a93-8e58-ab1c0f42f046" />
 
+Nyt on Ansiblella asennettu ja käynnissä oleva **nginx**!
   
-
-
-
-
-
 
 
 ## **LÄHTEET**
