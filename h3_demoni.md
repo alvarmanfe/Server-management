@@ -16,7 +16,7 @@
 - Tehtävän lopussa olevalla ```notify```lla, voidaan ilmoittaa handlerille toiminnon suorittamisesta. Tässä tapauksessa, jos tiedosto on muuttunut niin notify ilmoittaa handlerille, joka suorittaa uudelleenkäynnistyksen.
 - Handlerit ovat apuna automaatiossa, jolla vältetään turhia palvelun uudellenkäynnistäytymisiä.
 
-## **Apassi**
+## **a) Apassi**
 
 - Avasin siis uuden terminaali-ikkunan ja päivitin aluksi paketit ajamalla ```sudo apt update``` ja asensin apachen heti porään ```sudo apt-get install apache2```
 
@@ -43,10 +43,19 @@
   <img width="585" height="111" alt="Näyttökuva 2026-11-12 071134" src="https://github.com/user-attachments/assets/61830570-20aa-4ee4-a42b-94bea9ac6dcd" />
   <img width="342" height="56" alt="Näyttökuva 2026-11-12 071043" src="https://github.com/user-attachments/assets/2814e895-6936-4f42-9869-305bb96e1957" />
 
+```index.html``` omistaja on alvar ja sen oikeudet ovat rw-, eli käyttäjä alvar voi muokata tiedostoa ilman root- tai sudo-oikeuksia.
 
 - Nyt palvelimeni etusivulla näkyy index.html kirjoittama koodini.
 
   <img width="587" height="153" alt="Näyttökuva 2026-11-12 070923" src="https://github.com/user-attachments/assets/523b6952-df3f-4c40-9408-cf1a0c629f70" />
+
+## **b) Moottorix**
+
+Tässä tehtävässä asennetaan nginx:
+
+- Teron vinkkeissä "Kaksi demonia ei voi kuunnella samaa porttia". Eli ennen nginx asennusta kytketään Apache pois päältä. Sen jölkeen voidaankin heti asentaa nginx.
+  <img width="1131" height="332" alt="Näyttökuva 2026-11-12 073316" src="https://github.com/user-attachments/assets/adbe4686-9f5e-44df-8c14-c8867839e11f" />
+
 
 
 
