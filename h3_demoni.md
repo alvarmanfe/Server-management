@@ -85,6 +85,25 @@ Nämä kaksi tehtävää muistuttivat minulle ```sites-available``` ja ```sites-
 
 ## **c) Automoottorix**
 
+Tässä tehtävässä asennettiin Nginx Ansiblella.
+
+- Loin uuden polun ```roles/nginx/tasks```
+
+  <img width="1139" height="438" alt="Näyttökuva 2026-11-12 130948" src="https://github.com/user-attachments/assets/adc7d4fa-9752-4b51-8c0b-e4284cf30520" />
+
+- Tein sinne ```main.yml``` tiedoston, jota muokkasin microlla seuraavasti:
+
+  <img width="419" height="187" alt="Näyttökuva 2026-11-12 130617" src="https://github.com/user-attachments/assets/31642c72-2c48-4876-aa13-5af71bbd9458" />
+
+- Käyn muokkaamassa ```site.yml``` tiedostoa lisäten sinne **_nginx_** roolin.
+
+  <img width="315" height="175" alt="Näyttökuva 2026-11-12 131647" src="https://github.com/user-attachments/assets/56150c30-302d-432e-a7fc-39fb1397ce18" />
+
+- Sitten käynnistetään Ansiblella ```ansible-playbook site.yml```, mutta virhe ilmestyy. Olikin jäänyt väli laittamatta ```roles/nginx/tasks/main.yml``` _update_cache_ kohdassa. Käyn korjaamassa sen ja ajan uudetsaan playbookin.
+
+  <img width="1182" height="635" alt="Näyttökuva 2026-11-12 133325" src="https://github.com/user-attachments/assets/e83d4009-3133-4a93-8e58-ab1c0f42f046" />
+
+  
 
 
 
