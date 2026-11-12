@@ -53,10 +53,10 @@ Asennetaan aluksi Apache käsin.
 
 ## **b) Moottorix**
 
-Tässä tehtävässä asennetaan nginx käsin:
+Tässä tehtävässä asennetaan nginx käsin. Asennukset ovat hyvin samankaltaisia, mutta niissä on kuitenkin pieniä eroja, joten käytin aiheeseen liittyvää lähteistöä tukenani.
 
 - Aloitetaan päivittämällä paketit ```sudo apt update```
-- Teron vinkkeissä "Kaksi demonia ei voi kuunnella samaa porttia". Eli ennen nginx asennusta kytketään Apache pois päältä. Sen jölkeen voidaankin heti asentaa nginx.
+- Teron vinkkeissä "Kaksi demonia ei voi kuunnella samaa porttia". Eli ennen nginx asennusta kytketään Apache pois päältä. Sen jälkeen voidaankin heti asentaa nginx.
 
   <img width="1131" height="332" alt="Näyttökuva 2026-11-12 073316" src="https://github.com/user-attachments/assets/adbe4686-9f5e-44df-8c14-c8867839e11f" />
 
@@ -67,11 +67,21 @@ Tässä tehtävässä asennetaan nginx käsin:
 
 - Sitten asetustiedostoon komennolla ```sudoedit /etc/nginx/sites-available/alvarmanfe.com```
 
-ja vaihdetaan asetuksia samalla tavalla kuin Apachessakin, mutta omalla syntaksilla. 
+ja vaihdetaan asetuksia samalla tavalla kuin Apachessakin, mutta Nginxin omalla syntaksilla. 
 
   <img width="552" height="128" alt="Näyttökuva 2026-11-12 075109" src="https://github.com/user-attachments/assets/03bf0d42-3ffe-43e8-8f44-4b39b84a0834" />
 
-- Toisin kun Apachessa jossa käytettiin sitesenable
+- Toisin kun Apachessa, Nginx:ssä otetaan oma sivusto käyttöön symbolisella linkillä, jonka kautta Nginx löytää määritystiedostoni.
+- Ajetaan siis ```sudo ln -s /etc/nginx/sites-available/alvarmanfe.com /etc/nginx/sites-enabled/```
+  ja poistetaan Nginxin oletussivu käytöstä ```sudo rm /etc/nginx/sites-enabled/default```
+
+- Tarkistetaan asetukset ajamalla ```sudo nginx -t```
+
+    <img width="1020" height="93" alt="Näyttökuva 2026-11-12 081213" src="https://github.com/user-attachments/assets/fea7bd91-cf6a-4a76-ad02-9f3ca09876f3" />
+
+- Lopuksi tarkistetaan selaimesta localhost sivu. Se näyttää nyt samalta kun edellisen tehtävän lopussa!
+
+Nämä kaksi tehtävää muistuttivat minulle 
 
 
 
@@ -85,6 +95,8 @@ ja vaihdetaan asetuksia samalla tavalla kuin Apachessakin, mutta omalla syntaksi
 - Karvinen, T. 2026. Apache installed with Ansible – quick notes. Luettavissa: https://terokarvinen.com/apache-ansible/. Luettu: 11.11.2026.
 
 - Ansible Community Documentation. N.d. Handlers: running operations on change. Luettavissa: https://docs.ansible.com/projects/ansible/latest/playbook_guide/playbooks_handlers.html. Luettu: 11.11.2026.
+
+- Nginx. Beginner’s Guide. Luettavissa: https://nginx.org/en/docs/beginners_guide.html. Luettu: 11.11.2026.
 
 
 
