@@ -81,7 +81,7 @@ ja vaihdetaan asetuksia samalla tavalla kuin Apachessakin, mutta Nginxin omalla 
 
 - Lopuksi tarkistetaan selaimesta localhost sivu. Se näyttää nyt samalta kun edellisen tehtävän lopussa!
 
-Nämä kaksi tehtävää muistuttivat minulle 
+Nämä kaksi tehtävää muistuttivat minulle ```sites-available``` ja ```sites-enabled``` erosta: toinen sisältää sivustojen asetustiedostot ja toinen määrittää, mitkä niistä ovat käytössä.
 
 
 
