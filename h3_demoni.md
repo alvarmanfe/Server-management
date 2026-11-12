@@ -65,9 +65,7 @@ Tässä tehtävässä asennetaan nginx käsin. Asennukset ovat hyvin samankaltai
 
   <img width="1194" height="399" alt="Näyttökuva 2026-11-12 074243" src="https://github.com/user-attachments/assets/e345c14e-f568-4ece-97d6-251341057185" />
 
-- Sitten asetustiedostoon komennolla ```sudoedit /etc/nginx/sites-available/alvarmanfe.com```
-
-ja vaihdetaan asetuksia samalla tavalla kuin Apachessakin, mutta Nginxin omalla syntaksilla. 
+- Sitten asetustiedostoon komennolla ```sudoedit /etc/nginx/sites-available/alvarmanfe.com``` ja vaihdetaan asetuksia samalla tavalla kuin Apachessakin, mutta Nginxin omalla syntaksilla. 
 
   <img width="552" height="128" alt="Näyttökuva 2026-11-12 075109" src="https://github.com/user-attachments/assets/03bf0d42-3ffe-43e8-8f44-4b39b84a0834" />
 
