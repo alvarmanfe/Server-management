@@ -28,6 +28,19 @@
 
 <img width="797" height="271" alt="Näyttökuva 2026-11-11 181840" src="https://github.com/user-attachments/assets/6f284efc-136a-4893-a3d1-e228489d675a" />
 
+- Avaan Apachen asetustiedostot komennolla:
+```sudoedit /etc/apache2/sites-available/sona2k.example.com.conf```
+
+- lisään tarvittavat muutokset jotka osoittaavat _public_ kansioon jossa index.html sivuni löytyy
+
+<img width="606" height="232" alt="Näyttökuva 2026-11-12 065406" src="https://github.com/user-attachments/assets/a9c2bf62-b7f2-4d4c-a952-7edcc2651447" />
+
+- lopuksi otan käyttöön asetustiedoston ja pyydän apaachea lataamaan asetukset uudelleen ```sudo systemctl reload apache2```
+
+<img width="805" height="79" alt="Näyttökuva 2026-11-12 070116" src="https://github.com/user-attachments/assets/70bfdab0-461c-4b3d-ac44-086500d17f15" />
+
+
+
 
 
 ## **LÄHTEET**
