@@ -83,6 +83,8 @@ ja vaihdetaan asetuksia samalla tavalla kuin Apachessakin, mutta Nginxin omalla 
 
 Nämä kaksi tehtävää muistuttivat minulle ```sites-available``` ja ```sites-enabled``` erosta: toinen sisältää sivustojen asetustiedostot ja toinen määrittää, mitkä niistä ovat käytössä.
 
+## **c) Automoottorix**
+
 
 
 
