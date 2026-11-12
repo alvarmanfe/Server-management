@@ -20,24 +20,33 @@
 
 - Avasin siis uuden terminaali-ikkunan ja päivitin aluksi paketit ajamalla ```sudo apt update``` ja asensin apachen heti porään ```sudo apt-get install apache2```
 
-<img width="794" height="261" alt="Näyttökuva 2026-11-11 180748" src="https://github.com/user-attachments/assets/8d16ee26-785b-4ade-9a07-3f4e93a8c4c8" />
+  <img width="794" height="261" alt="Näyttökuva 2026-11-11 180748" src="https://github.com/user-attachments/assets/8d16ee26-785b-4ade-9a07-3f4e93a8c4c8" />
 
   Apache näyttääkin olevan jo ennalta asennettu.
 
 - Tarkistetaan Apachen status ```sudo systemctl status apache2```
 
-<img width="797" height="271" alt="Näyttökuva 2026-11-11 181840" src="https://github.com/user-attachments/assets/6f284efc-136a-4893-a3d1-e228489d675a" />
+  <img width="797" height="271" alt="Näyttökuva 2026-11-11 181840" src="https://github.com/user-attachments/assets/6f284efc-136a-4893-a3d1-e228489d675a" />
 
 - Avaan Apachen asetustiedostot komennolla:
 ```sudoedit /etc/apache2/sites-available/sona2k.example.com.conf```
 
-- lisään tarvittavat muutokset jotka osoittaavat _public_ kansioon jossa index.html sivuni löytyy
+- Lisään tarvittavat muutokset jotka osoittaavat _public_ kansioon jossa index.html sivuni löytyy
 
-<img width="606" height="232" alt="Näyttökuva 2026-11-12 065406" src="https://github.com/user-attachments/assets/a9c2bf62-b7f2-4d4c-a952-7edcc2651447" />
+  <img width="606" height="232" alt="Näyttökuva 2026-11-12 065406" src="https://github.com/user-attachments/assets/a9c2bf62-b7f2-4d4c-a952-7edcc2651447" />
 
-- lopuksi otan käyttöön asetustiedoston ja pyydän apaachea lataamaan asetukset uudelleen ```sudo systemctl reload apache2```
+- Lopuksi otan käyttöön asetustiedoston ja pyydän apaachea lataamaan asetukset uudelleen ```sudo systemctl reload apache2```
 
-<img width="805" height="79" alt="Näyttökuva 2026-11-12 070116" src="https://github.com/user-attachments/assets/70bfdab0-461c-4b3d-ac44-086500d17f15" />
+  <img width="805" height="79" alt="Näyttökuva 2026-11-12 070116" src="https://github.com/user-attachments/assets/70bfdab0-461c-4b3d-ac44-086500d17f15" />
+
+
+  <img width="585" height="111" alt="Näyttökuva 2026-11-12 071134" src="https://github.com/user-attachments/assets/61830570-20aa-4ee4-a42b-94bea9ac6dcd" />
+  <img width="342" height="56" alt="Näyttökuva 2026-11-12 071043" src="https://github.com/user-attachments/assets/2814e895-6936-4f42-9869-305bb96e1957" />
+
+
+- Nyt palvelimeni etusivulla näkyy index.html kirjoittama koodini.
+
+  <img width="587" height="153" alt="Näyttökuva 2026-11-12 070923" src="https://github.com/user-attachments/assets/523b6952-df3f-4c40-9408-cf1a0c629f70" />
 
 
 
