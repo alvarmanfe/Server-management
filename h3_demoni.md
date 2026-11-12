@@ -18,6 +18,8 @@
 
 ## **a) Apassi**
 
+Asennetaan aluksi Apache käsin.
+
 - Avasin siis uuden terminaali-ikkunan ja päivitin aluksi paketit ajamalla ```sudo apt update``` ja asensin apachen heti porään ```sudo apt-get install apache2```
 
   <img width="794" height="261" alt="Näyttökuva 2026-11-11 180748" src="https://github.com/user-attachments/assets/8d16ee26-785b-4ade-9a07-3f4e93a8c4c8" />
@@ -51,10 +53,27 @@
 
 ## **b) Moottorix**
 
-Tässä tehtävässä asennetaan nginx:
+Tässä tehtävässä asennetaan nginx käsin:
 
+- Aloitetaan päivittämällä paketit ```sudo apt update```
 - Teron vinkkeissä "Kaksi demonia ei voi kuunnella samaa porttia". Eli ennen nginx asennusta kytketään Apache pois päältä. Sen jölkeen voidaankin heti asentaa nginx.
+
   <img width="1131" height="332" alt="Näyttökuva 2026-11-12 073316" src="https://github.com/user-attachments/assets/adbe4686-9f5e-44df-8c14-c8867839e11f" />
+
+- Käynnistin komennolla ```sudo systemctl start nginx``` ja asetin sen käynnistymään automaattisesti myös koneen uudelleenkäynnistyessä ```sudo systemctl enable nginx```
+- Tarkistin sitten statuksen komennolla ```sudo systemctl status nginx```
+
+  <img width="1194" height="399" alt="Näyttökuva 2026-11-12 074243" src="https://github.com/user-attachments/assets/e345c14e-f568-4ece-97d6-251341057185" />
+
+- Sitten asetustiedostoon komennolla ```sudoedit /etc/nginx/sites-available/alvarmanfe.com```
+
+ja vaihdetaan asetuksia samalla tavalla kuin Apachessakin, mutta omalla syntaksilla. 
+
+  <img width="552" height="128" alt="Näyttökuva 2026-11-12 075109" src="https://github.com/user-attachments/assets/03bf0d42-3ffe-43e8-8f44-4b39b84a0834" />
+
+- 
+
+
 
 
 
