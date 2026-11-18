@@ -43,7 +43,7 @@ Mielestäni konfiguroinnissa tärkein on tehdä asioista mahdollisimman selkeit�
 
   <img width="1250" height="59" alt="Näyttökuva 2026-11-18 195201" src="https://github.com/user-attachments/assets/3df4cfb8-31ff-4c87-ac38-bfe10dcfbc07" />
 
-## **Asetus**
+## **c) Asetus**
 
 - 
 
