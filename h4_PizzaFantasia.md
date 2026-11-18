@@ -32,7 +32,7 @@ Mielestäni konfiguroinnissa tärkein on tehdä asioista mahdollisimman selkeit�
 
   <img width="315" height="174" alt="Näyttökuva 2026-11-18 194641" src="https://github.com/user-attachments/assets/49c9b198-e241-449c-adbf-fe4b60eba743" />
 
-  Ja sitten ```site.yml``` tiedostao:
+  Ja sitten ```site.yml``` tiedostoa:
 
   <img width="276" height="152" alt="Näyttökuva 2026-11-18 194839" src="https://github.com/user-attachments/assets/fbfeeffc-790c-4cd3-949d-f155bec179fd" />
 
