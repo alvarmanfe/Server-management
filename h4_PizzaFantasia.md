@@ -109,6 +109,8 @@ Tämän tehtävän tarkoituksena meidän on rikkoa asetuksia ja tarkistaa onko a
 
   <img width="887" height="356" alt="Näyttökuva 2026-11-18 224506" src="https://github.com/user-attachments/assets/682650ed-a9ef-4e3c-852a-9749fccf6ed2" />
 
+Automaatio toimii
+
 ## **e) Idempotentti**
 
 Jos ajetaan nyt vielä kerran Ansible niin näyttää tältä:
