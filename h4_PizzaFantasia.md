@@ -81,7 +81,7 @@ Lisätään sinne:
 
    <img width="630" height="35" alt="Näyttökuva 2026-11-18 213958" src="https://github.com/user-attachments/assets/974355bf-23ea-4fbd-b503-265fb9a2a9bc" />
 
-   Tämä luultavasti johtuu siitä, että asetustiedosto oli jo kopioitu ennen kuin lisäsin notify-määrityksen tai koska se oli aluksi siennetty väärin joten kopioitu ennen kun kävin muuttamassa sisennystä. Ansible ei silloin välttämättä havainnut muutosta eikä käynnistänyt palvelua uudelleen.
+   Tämä luultavasti johtuu siitä, että asetustiedosto oli jo kopioitu ennen kuin lisäsin notify-määrityksen tai koska se oli aluksi sisennetty väärin joten kopioitu ennen kun kävin muuttamassa sisennystä. Ansible ei silloin välttämättä havainnut muutosta, eikä käynnistänyt palvelua uudelleen automaattisesti.
 
    Potaksitaan siis demoni uudelleen käyntiin ```sudo systemctl restart fail2ban``` ja ajetaan uudelleen ```sudo fail2ban-client get loglevel```.
    Nyt näyttää toimivan:
