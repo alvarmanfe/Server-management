@@ -117,7 +117,7 @@ Jos ajetaan nyt vielä kerran Ansible niin näyttää tältä:
 
 <img width="1249" height="50" alt="Näyttökuva 2026-11-18 224847" src="https://github.com/user-attachments/assets/05c439e8-81dc-460b-a0bf-a900cdecf6ed" />
 
-changed näyttää nyt 0. Tämä koska Fail2ban on asennettu ja käynnissä, eli Ansible ei joudu tekemään muutoksia.
+changed näyttää nyt 0. Tämä koska Fail2ban on asennettu ja käynnissä ja tiedostoihin ei ole tehty muutoksia, eli silloin Ansible myöskään ei joudu tekemään muutoksia.
 
 
 ## **LÄHTEET**
