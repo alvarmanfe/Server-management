@@ -45,7 +45,58 @@ Mielestäni konfiguroinnissa tärkein on tehdä asioista mahdollisimman selkeit�
 
 ## **c) Asetus**
 
-- 
+- Omassa Ansible projektihakemistossa luodaan uusi kansio ```micro roles/fail2ban/files/fail2ban.local```. Tämä tehdää koska tarkoituksena on muuttaa Fail2banin asetuksia niin, että Ansible pystyy hallitsemaan niitä keskitetysti master-koneelta. ```.local```-tiedostojen idea on, että voit tehdä omia muutoksia ilman, että alkuperäisiä asetustiedostoja tarvitsee muokata.
+Lisätään sinne:
+
+ <img width="239" height="63" alt="Näyttökuva 2026-11-18 205215" src="https://github.com/user-attachments/assets/89aebfea-069a-455a-bc9b-3c00c4a549a2" />
+
+ - [Definition] määrittää Fail2banin yleiset palvelinasetukset.
+ - loglevel määrittää lokituksen tarkkuuden.
+ - DEBUG tarkoittaa yksityiskohtaista lokitusta.
+- Muokataan seuraavaksi Ansiblen task tiedostoa ```main.yml```. Lisätään apt- ja service- jälkeen:
+
+  <img width="556" height="308" alt="Näyttökuva 2026-11-18 211050" src="https://github.com/user-attachments/assets/fc563151-229f-45cc-8dc1-72d47d696195" />
+ Tässä kopioidaan tiedosto Masterilta palvelimelle.
+
+- Muokataan handlereitä ```micro roles/fail2ban/handlers/main.yml```:
+
+  <img width="365" height="102" alt="Näyttökuva 2026-11-18 211505" src="https://github.com/user-attachments/assets/f8c16afd-d5f4-4290-a342-d3a7ee42d7ea" />
+
+ **Muistutuksena** Handleri suoritetaan vain silloin, kun jokin toinen tehtävä ilmoittaa sen tarpeelliseksi. Eli jos ja kun tiedosto on muuttunut niin ```notify``` ilmoittaa tästä handlerille, joka käynnistää Fail2banin uudelleen.
+ 
+- Ajetaan Ansible uudestaan ```ansible-palybook site.yml```
+  Saadaan virheilmoitus:
+  
+  <img width="1246" height="178" alt="Näyttökuva 2026-11-18 212532" src="https://github.com/user-attachments/assets/c1b10065-b8cf-440b-ac25-3675d1b354c8" />
+  
+ Vika näyttäisi olevan joko handlers tai tasks tiedostossa. Tarkistetaan yksi kerrallaan. Vika löytyi yml syntaksissa! ```notify: Restart fail2ban``` oli sisennetty väärin, joten korjaan sen:
+
+ <img width="472" height="159" alt="Näyttökuva 2026-11-18 212730" src="https://github.com/user-attachments/assets/7702aa67-bfce-463b-ab1a-f83840e00b64" />
+
+ Ajetaan siis playbookki uudelleen ja tarkistetaan idempotenssi. Nyt toimii!
+
+ <img width="1250" height="212" alt="Näyttökuva 2026-11-18 212709" src="https://github.com/user-attachments/assets/9eaa7fa4-14d6-4d13-8f30-9ee69fa98e85" />
+
+ - Lopuksi tarkistan Fail2banin lokitustason komennolla ```sudo fail2ban-client get loglevel```. Sen pitäisi palauttaa meille ```DEBUG```, mutta se paluattaakin ```INFO```.
+
+   <img width="630" height="35" alt="Näyttökuva 2026-11-18 213958" src="https://github.com/user-attachments/assets/974355bf-23ea-4fbd-b503-265fb9a2a9bc" />
+
+   Tämä luultavasti johtuu siitä, että asetustiedosto oli jo kopioitu ennen kuin lisäsin notify-määrityksen tai koska se oli aluksi siennetty väärin joten kopioitu ennen kun kävin muuttamassa sisennystä. Ansible ei silloin välttämättä havainnut muutosta eikä käynnistänyt palvelua uudelleen.
+
+   Potaksitaan siis demoni uudelleen käyntiin ```sudo systemctl restart fail2ban``` ja ajetaan uudelleen ```sudo fail2ban-client get loglevel```.
+   Nyt näyttää toimivan:
+
+   <img width="665" height="54" alt="Näyttökuva 2026-11-18 214053" src="https://github.com/user-attachments/assets/b5c30746-01a4-40bd-a634-374f2c153324" />
+
+   
+
+
+
+  
+
+  
+  
+  
 
   
 
