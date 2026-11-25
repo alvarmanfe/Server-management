@@ -132,34 +132,29 @@ Kerran ollaan luotu repo niin näkymä näyttää seuraavalta:
 
   <img width="1230" height="273" alt="Näyttökuva 2026-11-25 195120" src="https://github.com/user-attachments/assets/2cba4d3d-b913-4d12-b09d-bdc91ec596d9" />
 
-  
+Ansible-playbookin ajamisen jälkeen käytin Git-komentoja tallentaakseni tekemäni muutoksen versionhallintaan varmistaakseni että Ansiblella tehty muutos oli tallennettu Gitissä ja että sen voi jälkikäteen nähdä versionhistoriasta.
 
+```git status``` tarkistin, mitkä tiedostot olivat muuttuneet tai vielä tallentamatta Gitiin.
+```git diff``` tarkistin, mitä muutoksia tiedostoihin oli tehty.
+```git add .``` – lisäsin muuttuneen YML-tiedoston seuraavaan commitiin.
+```git commit``` – tallensin muutoksen Gitin versiohistoriaan kuvaavalla viestillä.
+```git log``` – tarkistin, että commit tallentui ja näkyi projektin historiassa.
 
+  <img width="879" height="458" alt="Näyttökuva 2026-11-25 195834" src="https://github.com/user-attachments/assets/7958cf58-1e81-42d7-b85b-d2fcc2435940" />'
 
-  
+  <img width="1032" height="549" alt="Näyttökuva 2026-11-25 195901" src="https://github.com/user-attachments/assets/e7c6305e-b56c-4a6d-b73a-6f0a2588eed4" />
 
+## **f)**
 
-
-
-
-
-
-  
-
-
-
-
-  
-
-  
-
+Olen löytänyt parin ryhmäprojektiin ja ollaan sovittu Teamsin välityksellä seuraavista askelista.
 
 
 
 ## **LÄHTEET** 
 
-- https://git-scm.com/book/en/v2/Getting-Started-What-is-Git%3F
-- https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/about-authentication-to-github?utm_source=chatgpt.com
+- Git. s.a. What is Git? Luettavissa: https://git-scm.com/book/en/v2/Getting-Started-What-is-Git%3F. Luettu: 25.11.2026.
+
+- GitHub Docs. s.a. About authentication to GitHub. Luettavissa: https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/about-authentication-to-github. Luettu: 25.11.2026.
 
 
 
