@@ -72,9 +72,32 @@ Kerran ollaan luotu repo niin näkymä näyttää seuraavalta:
 
   <img width="1217" height="558" alt="Näyttökuva 2026-11-25 183940" src="https://github.com/user-attachments/assets/9e142575-4822-4115-8136-f478e136bbc5" />
 
-  <img width="493" height="205" alt="Näyttökuva 2026-11-25 184011" src="https://github.com/user-attachments/assets/ed47279f-0bdc-4467-ade4-1026dafd3af5" />
+  <img width="493" height="205" alt="Näyttökuva 2026-11-25 184011" src="https://github.com/user-attachments/assets/ed47279f-0bdc-4467-ade4-1026dafd3af5" /
+
+  Omaa pohdintaa:
+  - Tämän tehtävän aikana huomatiin Gitin tärkeys. GitHub-palvelukatkosta huolimatta sain tehtyä kaikki muutokset paikallisesti, sillä GitHubissa luoma repositorioni oli jo kloonattu omalle koneelle. Etärepositoriossa näkymisen edellytyksenä oli kuitenkin GitHub-sivuston korrektin toimiminen.
+  - Myös commit viestit, kuten repon nimet ja kuvaus, kannattaa aina muistaa kirjoittaa englanniksi.
 
 ## **c) Doh!**
+
+- Tein muutoksia äskeiseen tekstitiedostoon vaihtamalla sen sisältöä näin:
+
+  <img width="277" height="44" alt="Näyttökuva 2026-11-25 185235" src="https://github.com/user-attachments/assets/60d1c916-0121-4bf1-bc2f-df09c5a62dbd" />
+
+- En ajanut _commit_ komentoa vaan tarkistin statuksen ja muutokset:
+
+  <img width="723" height="339" alt="Näyttökuva 2026-11-25 185753" src="https://github.com/user-attachments/assets/dbe4e249-7ee9-45e1-86ff-cff1089ad5b8" />
+  
+  Tässä näkyy miten tiedoston tekstiä on muutettu.
+  
+- Tuhoan muutokset komennolla ```git reset --hard```, jonka jälkeen tarkistan uusiksi statuksen ja tekstitiedostoni, joka on palannut ennalleen.
+
+  <img width="596" height="171" alt="Näyttökuva 2026-11-25 190129" src="https://github.com/user-attachments/assets/d014516b-ab28-48c1-9320-a377b367e9e2" />
+
+## **d) Tukki**
+
+
+
 
 
 
