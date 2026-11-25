@@ -51,8 +51,23 @@ Kerran ollaan luotu repo niin näkymä näyttää seuraavalta:
 
   <img width="1033" height="571" alt="Näyttökuva 2026-11-25 173458" src="https://github.com/user-attachments/assets/e58f5bbb-e643-41fe-a066-a446cbd41750" />
 
-  Lopuksi yritin puskea ```git push```. Tällä komennolla paikalliseen repositorioon tehdyt commitit lähetetään etärepositorioon. Näin muutokset saadaan tallennettua myös GitHubiin. Muutosten siirtäminen onnistuu, kun ne on ensin lisätty ```git add``` -komennolla ja tallennettu ```git commit``` -komennolla.
+- Lopuksi yritin puskea ```git push```. Tällä komennolla paikalliseen repositorioon tehdyt commitit lähetetään etärepositorioon. Näin muutokset saadaan tallennettua myös GitHubiin. Muutosten siirtäminen kuuluisi onnistua, kun ne on ensin lisätty ```git add``` -komennolla ja tallennettu ```git commit``` -komennolla.
 
+  <img width="954" height="98" alt="Näyttökuva 2026-11-25 173944" src="https://github.com/user-attachments/assets/895618ee-7577-4327-85e1-fd87897bb697" />
+
+  Tässä kohdassa meni joku pieleen autentikoinnissa. Muistelin tunnilla, että oltiin näytetty jotain asetuksia jotka täytyy tehdä GitHubissa, jotta tämä toimisi. Päätin siis etsiä tietoa myös eri lähtesitä ja löysin apua tähän GitHubin sivuilta. Löytämieni tietojen mukaan GitHub ei enää hyväksy tavallista GitHub-tilin salasanaa git push -komennon tunnistautumiseen.
+
+- Tein asetuksiin muutoksia GitHubin puolella _SSH and GPG keys_ kohdassa ja lisäsin sinne oman ssh avaimeni jonka kävin kopioimassa virtuaalikoneelta. Tämän jälkeen GitHub tunnistaa koneeni SSH-avaimen avulla, eikä minun tarvitse käyttää GitHub-salasanaa ```git push``` -komennossa.
+
+  
+
+
+
+
+## **LÄHTEET** 
+
+- https://git-scm.com/book/en/v2/Getting-Started-What-is-Git%3F
+- https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/about-authentication-to-github?utm_source=chatgpt.com
 
 
 
