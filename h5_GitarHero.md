@@ -14,11 +14,11 @@ Olen itse käyttänyt jonkun verran Git:iä Linux-ympäristössä. Koulukursseil
 
 Git komennot ranslaisin viivoin:
 
-```git add --all``` Lisää kaikki muutokset valmisteltaviksi.
-```git commit``` Tallentaa muutokset paikallisesti.
-```git pull``` Hakee muutokset etäpalvelimelta.
-```git push``` Lähettää muutokset etäpalvelimelle.
-```&&``` Suorittaa seuraavan komennon, jos edellinen onnistuu.
-```git status``` Näyttää projektin tilan.
-```-m``` Lisää commitille viestin.
-```git clone``` Kun halutaan kloonata olemassa oleva repositorio paikalliselle koneelle.
+- ```git add --all``` Lisää kaikki muutokset valmisteltaviksi.
+- ```git commit``` Tallentaa muutokset paikallisesti.
+- ```git pull``` Hakee muutokset etäpalvelimelta.
+- ```git push``` Lähettää muutokset etäpalvelimelle.
+- ```&&``` Suorittaa seuraavan komennon, jos edellinen onnistuu.
+- ```git status``` Näyttää projektin tilan.
+- ```-m``` Lisää commitille viestin.
+- ```git clone``` Kun halutaan kloonata olemassa oleva repositorio paikalliselle koneelle.
