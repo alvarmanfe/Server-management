@@ -1,4 +1,5 @@
 ## **h5 - Gitar Hero**
+_Aloitus 25.11.2026 klo 13:00_
 
 ## **x) Chacon and Straub 2014: Pro Git, 2ed: 1.3 Getting Started - What is Git?**
 
@@ -58,6 +59,32 @@ Kerran ollaan luotu repo niin näkymä näyttää seuraavalta:
   Tässä kohdassa meni joku pieleen autentikoinnissa. Muistelin että tunnilla oltiin näytetty jotain asetuksia, jotka täytyy tehdä GitHubissa jotta tämä toimisi. Päätin siis etsiä tietoa myös eri lähtesitä ja löysin apua tähän GitHubin sivuilta. Löytämieni tietojen mukaan GitHub ei enää hyväksy tavallista GitHub-tilin salasanaa git push -komennon tunnistautumiseen.
 
 - Tein asetuksiin muutoksia GitHubin puolella _SSH and GPG keys_ kohdassa ja lisäsin sinne oman ssh avaimeni jonka kävin kopioimassa virtuaalikoneeltani. Tämän jälkeen GitHub tunnistaa koneeni SSH-avaimen avulla, eikä minun tarvitse käyttää GitHub-salasanaa ```git push``` -komennossa.
+  Tämän jälkeen olikin luvassa pientä odottelua sillä GitHubissa on ilmennyt pieniä ongelmia, eikä minulla toiminut lainkaan git komennot sekä ssh-avaimen lisääminen asetuksiin.
+  
+  <img width="991" height="707" alt="Näyttökuva 2026-11-25 182134" src="https://github.com/user-attachments/assets/f2d58a30-b84a-4fdf-a0bc-ddae498876bc" />
+
+  Pitkän temppuilun jälkeen alkoi taas toimia. Jatkoin siis tehtäviä myöhemmin iltapäivällä. Sain nyt liitettyä virtuaalikoneen ssh-avaimen asetuksiin.
+
+  <img width="1003" height="252" alt="Näyttökuva 2026-11-25 182157" src="https://github.com/user-attachments/assets/258e768c-a435-4ba2-a301-607a2c6bcd8c" />
+
+- Käynnistin tässä vaiheessa uuden Terminaalin ja tarkistin, että _dolly.txt_ tekstitiedostoni löytyy repokansiosta ja kaikki näyttäisi olevan commitattu. Viimeiseksi ajoin ```git push``` uudestaan ja nyt vihdoin toimii.
+  Muutokset on viety nyt onnistuneesti etärepositoriionkin.
+
+  <img width="1217" height="558" alt="Näyttökuva 2026-11-25 183940" src="https://github.com/user-attachments/assets/9e142575-4822-4115-8136-f478e136bbc5" />
+
+  <img width="493" height="205" alt="Näyttökuva 2026-11-25 184011" src="https://github.com/user-attachments/assets/ed47279f-0bdc-4467-ade4-1026dafd3af5" />
+
+## **c) Doh!**
+
+
+
+
+  
+
+
+
+
+  
 
   
 
