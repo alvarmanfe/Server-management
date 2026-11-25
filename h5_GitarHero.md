@@ -55,9 +55,9 @@ Kerran ollaan luotu repo niin näkymä näyttää seuraavalta:
 
   <img width="954" height="98" alt="Näyttökuva 2026-11-25 173944" src="https://github.com/user-attachments/assets/895618ee-7577-4327-85e1-fd87897bb697" />
 
-  Tässä kohdassa meni joku pieleen autentikoinnissa. Muistelin tunnilla, että oltiin näytetty jotain asetuksia jotka täytyy tehdä GitHubissa, jotta tämä toimisi. Päätin siis etsiä tietoa myös eri lähtesitä ja löysin apua tähän GitHubin sivuilta. Löytämieni tietojen mukaan GitHub ei enää hyväksy tavallista GitHub-tilin salasanaa git push -komennon tunnistautumiseen.
+  Tässä kohdassa meni joku pieleen autentikoinnissa. Muistelin että tunnilla oltiin näytetty jotain asetuksia, jotka täytyy tehdä GitHubissa jotta tämä toimisi. Päätin siis etsiä tietoa myös eri lähtesitä ja löysin apua tähän GitHubin sivuilta. Löytämieni tietojen mukaan GitHub ei enää hyväksy tavallista GitHub-tilin salasanaa git push -komennon tunnistautumiseen.
 
-- Tein asetuksiin muutoksia GitHubin puolella _SSH and GPG keys_ kohdassa ja lisäsin sinne oman ssh avaimeni jonka kävin kopioimassa virtuaalikoneelta. Tämän jälkeen GitHub tunnistaa koneeni SSH-avaimen avulla, eikä minun tarvitse käyttää GitHub-salasanaa ```git push``` -komennossa.
+- Tein asetuksiin muutoksia GitHubin puolella _SSH and GPG keys_ kohdassa ja lisäsin sinne oman ssh avaimeni jonka kävin kopioimassa virtuaalikoneeltani. Tämän jälkeen GitHub tunnistaa koneeni SSH-avaimen avulla, eikä minun tarvitse käyttää GitHub-salasanaa ```git push``` -komennossa.
 
   
 
