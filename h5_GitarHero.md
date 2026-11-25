@@ -90,11 +90,53 @@ Kerran ollaan luotu repo niin näkymä näyttää seuraavalta:
   
   Tässä näkyy miten tiedoston tekstiä on muutettu.
   
-- Tuhoan muutokset komennolla ```git reset --hard```, jonka jälkeen tarkistan uusiksi statuksen ja tekstitiedostoni, joka on palannut ennalleen.
+- Tuhoan muutokset komennolla ```git reset --hard```, jonka jälkeen tarkistan uusiksi statuksen ja tekstitiedostoni, joka on palautunut viimeisimmän commitin mukaiseen tilaan.
 
   <img width="596" height="171" alt="Näyttökuva 2026-11-25 190129" src="https://github.com/user-attachments/assets/d014516b-ab28-48c1-9320-a377b367e9e2" />
 
 ## **d) Tukki**
+
+- Tässä tehtävässä tarkistin lokit komennolla ```git log```
+
+  <img width="912" height="226" alt="Näyttökuva 2026-11-25 190811" src="https://github.com/user-attachments/assets/87105aa6-1d99-4dab-94b2-3711e5f08ceb" />
+
+  ja mitä muutoksia tiedostoihin on tehty ```git log -p```
+
+  <img width="943" height="639" alt="Näyttökuva 2026-11-25 191057" src="https://github.com/user-attachments/assets/ceb2d4b7-1b5c-4d99-bd19-2506fa7ec7d4" />
+  
+  <img width="1146" height="700" alt="Näyttökuva 2026-11-25 191146" src="https://github.com/user-attachments/assets/a7cbf0ff-af74-490e-919b-4ad4311ecf2b" />
+
+## **e) Gitanbile**
+
+- Suuntasin aluksi Ansible juurikansioon ja alustin siellä Gitin ```git init```. Tarkistataan status. Lisätään kaikki tiedostot ````git add .```
+
+  <img width="865" height="575" alt="Näyttökuva 2026-11-25 192646" src="https://github.com/user-attachments/assets/75e08e31-ba59-4bba-aa9b-fca853372a60" />
+
+- Sen jälkeen tallennan commitilla ja lisään kuten aina viestin perään. Nyt kaikki tiedostot on tallennettu.
+
+  <img width="753" height="474" alt="Näyttökuva 2026-11-25 192727" src="https://github.com/user-attachments/assets/664a31d3-45b3-4795-a0a1-687790bddc86" />
+
+- Lisäsin uuden tehtävän NGINX-rooliin (```micro roles/nginx/tasks/main.yml```):
+
+  <img width="637" height="339" alt="Näyttökuva 2026-11-25 194932" src="https://github.com/user-attachments/assets/bf86f61b-590f-479d-b708-33ee8aa45af1" />
+
+  - name on tehtävän kuvaus.
+  - ansible.builtin.copy luo tai kopioi tiedoston.
+  - content määrittää tiedoston sisällön.
+  - dest kertoo tiedoston sijainnin palvelimella.
+  - owner, group ja mode määrittävät omistajan, ryhmän ja käyttöoikeudet.
+
+  ja ajoin lopuksi Ansiblen:
+
+  <img width="1249" height="66" alt="Näyttökuva 2026-11-25 195040" src="https://github.com/user-attachments/assets/57474a60-fa89-4bf1-8977-89c0e2271350" />
+
+  <img width="1230" height="273" alt="Näyttökuva 2026-11-25 195120" src="https://github.com/user-attachments/assets/2cba4d3d-b913-4d12-b09d-bdc91ec596d9" />
+
+  
+
+
+
+  
 
 
 
