@@ -156,6 +156,8 @@ Olen löytänyt parin ryhmäprojektiin ja ollaan sovittu Teamsin välityksellä 
 
 - GitHub Docs. s.a. About authentication to GitHub. Luettavissa: https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/about-authentication-to-github. Luettu: 25.11.2026.
 
+- GitHub. s.a. sunshine: GitHub repository. Luettavissa: https://github.com/alvarmanfe/sunshine.
+
 
 
 
