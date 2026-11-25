@@ -108,7 +108,7 @@ Kerran ollaan luotu repo niin näkymä näyttää seuraavalta:
 
 ## **e) Gitanbile**
 
-- Suuntasin aluksi Ansible juurikansioon ja alustin siellä Gitin ```git init```. Tarkistataan status. Lisätään kaikki tiedostot ````git add .```
+- Suuntasin aluksi Ansible juurikansioon ja alustin siellä Gitin ```git init```. Tarkistataan status. Lisätään kaikki tiedostot ```git add .```
 
   <img width="865" height="575" alt="Näyttökuva 2026-11-25 192646" src="https://github.com/user-attachments/assets/75e08e31-ba59-4bba-aa9b-fca853372a60" />
 
