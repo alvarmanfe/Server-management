@@ -13,7 +13,7 @@ _Aloitus 25.11.2026 klo 13:00_
 Mielestäni Git on mahtava työkalu, sillä se on turvallinen, koska muutokset tallennetaan paikallisesti ja kätevä siitä, että sitä voi käyttää ilman internet-yhteyttä.
 Olen itse käyttänyt jonkun verran Git:iä Linux-ympäristössä. Koulukursseilla enemmän GitHub:ia. Tykkään silti ajaa git-komennot usein paikallisesti puskemalla lopputulokset GitHubiin (esimerkiksi ohjelmointikursseilla).
 
-Git komennot ranslaisin viivoin:
+Git komennot ranskalaisin viivoin:
 
 - ```git add --all``` Lisää kaikki muutokset valmisteltaviksi.
 - ```git commit``` Tallentaa muutokset paikallisesti.
@@ -23,6 +23,7 @@ Git komennot ranslaisin viivoin:
 - ```git status``` Näyttää projektin tilan.
 - ```-m``` Lisää commitille viestin.
 - ```git clone``` Kun halutaan kloonata olemassa oleva repositorio paikalliselle koneelle.
+- ```git init``` Luo tyhjän Git -repositoryn.
 
 ## **a) Online**
 
