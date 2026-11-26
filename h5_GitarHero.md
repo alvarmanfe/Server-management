@@ -96,12 +96,12 @@ Kerran ollaan luotu repo niin näkymä näyttää seuraavalta:
 
 ## **d) Tukki**
 
-- Tässä tehtävässä tarkistin lokit komennolla ```git log```
+- Tässä tehtävässä tarkistin lokit komennolla ```git log```. Komento näytti Gitin versionhistorian eli aikaisemmin tallennetut commitit, tunnisteet, tekijän, tallennusaika ja commit-viestit.
 
   <img width="912" height="226" alt="Näyttökuva 2026-11-25 190811" src="https://github.com/user-attachments/assets/87105aa6-1d99-4dab-94b2-3711e5f08ceb" />
 
-  ja mitä muutoksia tiedostoihin on tehty ```git log -p```
-
+- Sen jälkeen ```git log -p``` nähdäkseni, myös mitä muutoksia olin tehnyt Ansiblessa ja niitä koskevat tiedot, commitien lisäksi.
+  
   <img width="943" height="639" alt="Näyttökuva 2026-11-25 191057" src="https://github.com/user-attachments/assets/ceb2d4b7-1b5c-4d99-bd19-2506fa7ec7d4" />
   
   <img width="1146" height="700" alt="Näyttökuva 2026-11-25 191146" src="https://github.com/user-attachments/assets/a7cbf0ff-af74-490e-919b-4ad4311ecf2b" />
