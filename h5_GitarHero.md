@@ -103,8 +103,6 @@ Kerran ollaan luotu repo niin näkymä näyttää seuraavalta:
 - Sen jälkeen ```git log -p``` nähdäkseni, myös mitä muutoksia olin tehnyt Ansiblessa ja niitä koskevat tiedot, commitien lisäksi.
   
   <img width="943" height="639" alt="Näyttökuva 2026-11-25 191057" src="https://github.com/user-attachments/assets/ceb2d4b7-1b5c-4d99-bd19-2506fa7ec7d4" />
-  
-  <img width="1146" height="700" alt="Näyttökuva 2026-11-25 191146" src="https://github.com/user-attachments/assets/a7cbf0ff-af74-490e-919b-4ad4311ecf2b" />
 
 ## **e) Gitanbile**
 
